@@ -30,35 +30,6 @@
       <main class"main-catalog">
         <div class="wrap-form">
           <form class="form" action="#" method="post" name="features">
-            <h2 class="form-title">Стоимость в сутки (Р):</h2>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <input name="min-price" type="text" placeholder="от 0">
-                <input name="max-price" type="text" placeholder="до 3000">
-              </div>
-            </div>
-            <div class="block-checkbox">
-              <h2 class="block-title">Инфраструктура:</h2>
-              <div class="wrap-block">
-                <input type="checkbox" name="pool" id="pool-field" checked>
-                <label class="label-text" for="pool-field">Бассейн</label>
-              </div>
-              <div class="wrap-block">
-                <input type="checkbox" name="parking" id="parking-field">
-                <label class="label-text" for="parking-field">Парковка</label>
-              </div>
-              <div class="wrap-block">
-                <input type="checkbox" name="wifi" id="wifi-field">
-                <label class="label-text" for="wifi-field">Wi-Fi</label>
-              </div>
-            </div>
             <div class="block-checkbox">
               <h2 class="block-title">Тип жилья:</h2>
               <div class="wrap-block">
@@ -74,11 +45,31 @@
                 <label class="label-text" for="apartments-field">Апартаменты</label>
               </div>
             </div>
-            <input class="btn btn-form" type="submit" value="Показать">
+            <div class="range-filter">
+              <h2 class="filter-title">Стоимость в сутки (Р):</h2>
+                <div class="price-controls">
+                  <div class="wrap-input">
+                    <label for="min-money">от</label>
+                    <input name="min-price" type="text" id="min-money" placeholder=" 0">
+                  </div>
+                  <div class="wrap-input">
+                    <label for="max-money">до</label>
+                    <input name="max-price" type="text" id="max-money" placeholder=" 3000">
+                  </div>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+              </div>
+              <input class="btn btn-form" type="submit" value="Показать">
+            </div>
           </form>
         </div>
         <div class="sorting">
-          <h2 class="sorting-title">Найдено: 3</h2>
+          <h2 class="sorting-title">Найдено: <span class="sorting-number">3</span></h2>
           <p class="sorting-text">Сортировка:</p>
           <div class="sorting-item">
             <a class="sorting-link" href="#">По цене</a>
@@ -103,15 +94,15 @@
               <a class="module-btn-brown btn" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="module">
+          <div class="rating-module">
             <div class="stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
             </div>
-            <div class="module-text">
-              <p class="module-rating">Рейтинг: 8,5</p>
+            <div class="rating">
+              Рейтинг: <span class="rating-numder">8,5</span>
             </div>
           </div>
         </div>
@@ -128,14 +119,14 @@
               <a class="module-btn-brown btn" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="module">
+          <div class="rating-module">
             <div class="stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
             </div>
-            <div class="module-text">
-              <p class="module-rating">Рейтинг: 8,9</p>
+            <div class="rating">
+              Рейтинг: <span class="rating-numder">8,9</span>
             </div>
           </div>
         </div>
@@ -152,13 +143,13 @@
               <a class="module-btn-brown btn" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="module">
+          <div class="rating-module">
             <div class="stars">
-              <div class="star"></div>
-              <div class="star"></div>
+              <span class="star"></span>
+              <span class="star"></span>
             </div>
-            <div class="module-text">
-              <p class="module-rating">Рейтинг: 9,2</p>
+            <div class="rating">
+              Рейтинг: <span class="rating-numder">9,2</span>
             </div>
           </div>
         </div>
