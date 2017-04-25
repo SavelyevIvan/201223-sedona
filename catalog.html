@@ -8,7 +8,7 @@
     <div class="container">
       <header class="main-header">
         <a class="logo-link" href="index.html">
-          <img class="index-logo" src="" width="" height="" alt="Sedona">
+          <img class="index-logo" src="img/logo.png" width="138" height="70" alt="Sedona">
         </a>
         <nav class="main-navigation">
           <ul class="menu">
@@ -22,7 +22,7 @@
               <a href="#" class="menu-link">Карта штата</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Гостиницы</a>
+              <a  class="menu-link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -31,29 +31,44 @@
         <div class="wrap-form">
           <form class="form" action="#" method="post" name="features">
             <div class="block-checkbox">
+              <h2 class="block-title">Инфраструктура:</h2>
+              <div class="wrap-block">
+                <input type="checkbox" name="pool-field" id="pool" checked>
+                <label class="label-text" for="pool">Бассейн</label>
+              </div>
+              <div class="wrap-block">
+                <input type="checkbox" name="parking-field" id="parking" checked>
+                <label class="label-text" for="parking">Парковка</label>
+              </div>
+              <div class="wrap-block">
+                <input type="checkbox" name="wi-fi-field" id="wifi" checked>
+                <label class="label-text" for="wifi">wi-fi</label>
+              </div>
+            </div>
+            <div class="block-checkbox">
               <h2 class="block-title">Тип жилья:</h2>
               <div class="wrap-block">
-                <input type="checkbox" name="hotel" id="hotel-field" checked>
-                <label class="label-text" for="hotel-field">Гостиница</label>
+                <input type="checkbox" name="hotel-field" id="hotel" checked>
+                <label class="label-text" for="hotel">Гостиница</label>
               </div>
               <div class="wrap-block">
-                <input type="checkbox" name="motel" id="motel-field" checked>
-                <label class="label-text" for="motel-field">Мотель</label>
+                <input type="checkbox" name="motel-field" id="motel" checked>
+                <label class="label-text" for="motel">Мотель</label>
               </div>
               <div class="wrap-block">
-                <input type="checkbox" name="apartments" id="apartments-field" checked>
-                <label class="label-text" for="apartments-field">Апартаменты</label>
+                <input type="checkbox" name="apartments-field" id="apartments" checked>
+                <label class="label-text" for="apartments">Апартаменты</label>
               </div>
             </div>
             <div class="range-filter">
               <h2 class="filter-title">Стоимость в сутки (Р):</h2>
                 <div class="price-controls">
                   <div class="wrap-input">
-                    <label for="min-money">от</label>
+                    <label class="min-price-label" for="min-money">от</label>
                     <input name="min-price" type="text" id="min-money" placeholder=" 0">
                   </div>
                   <div class="wrap-input">
-                    <label for="max-money">до</label>
+                    <label class="" for="max-money">до</label>
                     <input name="max-price" type="text" id="max-money" placeholder=" 3000">
                   </div>
                 </div>
