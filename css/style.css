@@ -1,5 +1,5 @@
 body {
-  font-family: "PTSans";
+  font-family: "PT Sans";
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -12,4 +12,75 @@ h2 {
   line-height: 21px;
   color: #000000;
   font-weight: bold;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+
+}
+
+.logo-menu-link {
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-item {
+  width: 20%;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.background {
+  height: 508px;
+  background: url(../img/background.png);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.box {
+  display: flex;
+
+}
+
+.card {
+ width: 33%;
+ padding: 50px 40px;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+.box-image {
+  width: 67%;
+  background: url(../img/city.jpg) no-repeat;
+}
+
+.features {
+  display: flex;
+}
+
+.feature {
+  width: 33%;
+}
+
+.box-image-2 {
+  width: 67%;
+  background: url(../img/bridge.jpg) no-repeat;
 }
