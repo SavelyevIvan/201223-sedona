@@ -19,18 +19,21 @@ body {
   margin: 0 auto;
 }
 
-.main-header {
-
-}
-
 .logo-menu-link {
-
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+  width: 138px;
+  height: 70px;
 }
 
 .menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 6%;
   margin: 0;
   list-style: none;
 }
@@ -38,37 +41,78 @@ body {
 .menu-item {
   width: 20%;
   padding: 20px 0;
-  text-align: center;
-
 }
+
+.menu-item-left {
+  text-align: left;
+}
+
+.menu-item-right {
+  text-align: right;
+}
+
+.menu-link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
 
 .background {
   height: 508px;
-  background: url(../img/background.png);
+  background: #687c8b url(../img/background.jpg) 0 -61px;
 }
 
 .wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 60px;
   padding-bottom: 55px;
+  text-align: center;
+}
+
+.wrap-title {
+  width: 450px;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.wrap-text {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .box {
   display: flex;
-
 }
 
 .card {
- width: 33%;
- padding: 50px 40px;
- box-sizing: border-box;
+ width: 33.333%;
+ padding-top: 45px;
+ padding-bottom: 60px;
  text-align: center;
+}
+
+.card-title {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.card-paragraph {
+  width: 302px;
+  margin: 0 auto;
+}
+
+.grey-card .card-paragraph {
+  width: 270px;
 }
 
 .box-image {
   width: 67%;
+  height: 256px;
   background: url(../img/city.jpg) no-repeat;
 }
 
@@ -77,10 +121,80 @@ body {
 }
 
 .feature {
-  width: 33%;
+  width: 33.333%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.feature-paragraph {
+  width: 290px;
+  margin: 0 auto;
 }
 
 .box-image-2 {
+  order: -1;
   width: 67%;
+  height: 256px;
   background: url(../img/bridge.jpg) no-repeat;
+}
+
+.search {
+  padding-top: 55px;
+  text-align: center;
+}
+
+.search-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.search-text {
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+
+.search-btn {
+  display: block;
+  width: 568px;
+  padding: 30px 0;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search-form {
+  width: 568px;
+  padding: 55px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  width: 346px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input-number {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.btn-input-number {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
 }
