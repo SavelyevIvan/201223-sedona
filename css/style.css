@@ -176,7 +176,25 @@ body {
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.wrapper-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.label-people {
+  margin-right: 41.3px;
+}
+
+.label-child {
+  margin-right: 25px;
+}
+
+.input-wrapper-number {
+  display: flex;
 }
 
 .input-wrapper {
@@ -185,16 +203,150 @@ body {
 
 .input {
   width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .input-number {
   width: 38px;
   height: 38px;
+  padding: 0 15px;
   box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .btn-input-number {
   width: 38px;
   height: 38px;
   box-sizing: border-box;
+  text-align: center;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.btn-search-form {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 54px;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.wrap-form {
+  min-height: 217px;
+  background: url(../img/filter-background.jpg) no-repeat;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  padding: 0 6%;
+}
+
+.block-checkbox-1 {
+  margin-right: 110px;
+}
+
+.block-checkbox-2 {
+  margin-right: 330px;
+}
+
+.range-filter {
+  width: 320px;
+}
+
+.wrap-input {
+  width: 160px;
+}
+
+.price-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.price-controls {
+  display: flex;
+}
+
+.btn-form {
+  margin-left: 95px;
+}
+
+.sorting {
+  display: flex;
+  align-items: baseline;
+  padding: 0 6%;
+}
+
+.sorting-title {
+  margin: 0;
+  margin-right: 45px;
+}
+
+.sorting-text {
+  margin: 0;
+  margin-right: 35px;
+}
+
+.sorting-item:last-child {
+  margin-right: 0;
+}
+
+.sorting-link {
+  margin-right: 30px;
+}
+
+.content {
+  display: flex;
+  padding: 30px 6%;
+}
+
+.module {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 258px;
+  padding-right: 522px;
+}
+
+.module-title {
+  margin: 0;
+}
+
+.content-img {
+  margin-right: 30px;
+}
+
+.rating-module {
+  display: flex;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 6%;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  width: 33.333%;
+}
+
+.footer-text {
+
+}
+
+.social-btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  text-indent: -1000px;
+  background: #81b3d2;
 }

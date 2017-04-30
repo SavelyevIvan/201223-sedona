@@ -3,26 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
-        <a class="logo-link" href="index.html">
+        <a href="index.html" class="logo-menu-link">
           <img class="index-logo" src="img/logo.png" width="138" height="70" alt="Sedona">
         </a>
         <nav class="main-navigation">
           <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item menu-item-left">
               <a href="#" class="menu-link">Информация</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-left">
               <a href="#" class="menu-link">Фото и видео</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-right">
               <a href="#" class="menu-link">Карта штата</a>
             </li>
-            <li class="menu-item">
-              <a  class="menu-link">Гостиницы</a>
+            <li class="menu-item menu-item-right">
+              <a class="menu-link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -30,7 +33,7 @@
       <main class"main-catalog">
         <div class="wrap-form">
           <form class="form" action="#" method="post" name="features">
-            <div class="block-checkbox">
+            <div class="block-checkbox block-checkbox-1">
               <h2 class="block-title">Инфраструктура:</h2>
               <div class="wrap-block">
                 <input type="checkbox" name="pool-field" id="pool" checked>
@@ -45,7 +48,7 @@
                 <label class="label-text" for="wifi">wi-fi</label>
               </div>
             </div>
-            <div class="block-checkbox">
+            <div class="block-checkbox block-checkbox-2">
               <h2 class="block-title">Тип жилья:</h2>
               <div class="wrap-block">
                 <input type="checkbox" name="hotel-field" id="hotel" checked>
@@ -169,7 +172,7 @@
           </div>
         </div>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="footer-item footer-text">#VisitSedona</div>
         <div class="footer-item footer-social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a>

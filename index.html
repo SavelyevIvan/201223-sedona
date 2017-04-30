@@ -88,44 +88,46 @@
           <p class="search-text">Укажите предполагаемые даты поездки, и&#160;мы&#160;покажем&#160;вам&#160;лучшие&#160;предложения&#160;гостиниц&#160;в&#160;Седоне</p>
           <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
           <div class="search-form">
-            <form class="form" action="#" method="post" name="search">
+            <form class="search-form" action="#" method="post" name="search">
               <div class="wrapper">
                 <label class="label" for="visit">Дата заезда:</label>
                 <div class="input-wrapper">
-                  <input class="input" type="text" name="login" id="visit" placeholder="">
+                  <input class="input" type="text" name="login" id="visit" placeholder="24 апреля 2017">
                   <span class="wrpper-calendar"></span>
                 </div>
               </div>
               <div class="wrapper">
                 <label class="label" for="departure">Дата выезда:</label>
                 <div class="input-wrapper">
-                  <input class="input" type="text" name="login" id="departure" placeholder="">
+                  <input class="input" type="text" name="login" id="departure" placeholder="4 июля 2017">
                   <span class="wrpper-calendar"></span>
                 </div>
               </div>
               <div class="wrapper">
-                <label class="label" for="people">Взрослые:</label>
-                <div class="input-wrapper-number">
-                  <button class="btn btn-input-number" type"button">-</button>
-                  <input class="input-number" type="text" name="login" id="people" placeholder="">
-                  <button class="btn btn-input-number" type"button">+</button>
+                <div class="wrapper-item">
+                  <label class="label-people" for="people">Взрослые:</label>
+                  <div class="input-wrapper-number">
+                    <button class="btn btn-input-number" type"button">-</button>
+                    <input class="input-number" type="text" name="login" id="people" placeholder="2">
+                    <button class="btn btn-input-number" type"button">+</button>
+                  </div>
+                </div>
+                <div class="wrapper-item">
+                  <label class="label-child" for="child">Дети:</label>
+                  <div class="input-wrapper-number">
+                    <button class="btn btn-input-number" type"button">-</button>
+                    <input class="input-number" type="text" name="login" id="child" placeholder="0">
+                    <button class="btn btn-input-number" type"button">+</button>
+                  </div>
                 </div>
               </div>
-              <div class="wrapper">
-                <label class="label" for="child">Дети:</label>
-                <div class="input-wrapper-number">
-                  <button class="btn btn-input-number" type"button">-</button>
-                  <input class="input-number" type="text" name="login" id="child" placeholder="">
-                  <button class="btn btn-input-number" type"button">+</button>
-                </div>
-              </div>
-              <input class="btn btn-form" type="submit" value="Найти">
+              <input class="btn btn-search-form" type="submit" value="Найти">
             </form>
           </div>
         </div>
         <div class="map"></div>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="footer-item footer-text">#VisitSedona</div>
         <div class="footer-item footer-social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a>
