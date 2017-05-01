@@ -41,7 +41,7 @@ body {
 
 .menu-item {
   width: 20%;
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
 .menu-item-left {
@@ -241,7 +241,6 @@ body {
 .wrap-form {
   min-height: 217px;
   background: url(../img/filter-background.jpg) no-repeat;
-  margin-bottom: 30px;
 }
 
 .form {
@@ -282,6 +281,7 @@ body {
   display: flex;
   align-items: baseline;
   padding: 0 6%;
+  padding-top: 30px;
 }
 
 .sorting-title {
@@ -294,15 +294,27 @@ body {
   margin-right: 35px;
 }
 
-.sorting-item:last-child {
-  margin-right: 0;
-}
-
 .sorting-link {
   margin-right: 30px;
 }
 
-.sorting:last-child {
+.sorting-link:last-child {
+  margin-right: 452px;
+}
+
+.sorting-switch {
+  display: flex;
+}
+
+.switch {
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-right: 12px;
+  background: black;
+}
+
+.switch:last-child {
   margin-right: 0;
 }
 
@@ -331,6 +343,10 @@ body {
 }
 
 .rating-module {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 110px;
 }
 
 .stars {
@@ -363,10 +379,6 @@ body {
   width: 33.333%;
 }
 
-.footer-text {
-
-}
-
 .social-btn {
   display: block;
   width: 46px;
@@ -374,4 +386,15 @@ body {
   margin-right: 6px;
   text-indent: -1000px;
   background: #81b3d2;
+}
+
+.footer-block {
+  align-items: center;
+}
+
+.footer-link {
+  display: block;
+  width: 113px;
+  height: 39px;
+  background: url(../img/htmlacademy-logo.png)no-repeat center;
 }
