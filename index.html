@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -30,10 +30,10 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="main-content">
         <div class="background"></div>
         <div class="wrap">
-          <p class="wrap-title">Седона &#8212; небольшой городок в Аризоне, зслуживающий большего!</p>
+          <p class="wrap-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="wrap-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="box">
@@ -105,19 +105,19 @@
               </div>
               <div class="wrapper">
                 <div class="wrapper-item">
-                  <label class="label-people" for="people">Взрослые:</label>
+                  <label class="label label-people" for="people">Взрослые:</label>
                   <div class="input-wrapper-number">
-                    <button class="btn btn-input-number" type"button">-</button>
+                    <button class="btn btn-input btn-input-less" type"button">-</button>
                     <input class="input-number" type="text" name="login" id="people" placeholder="2">
-                    <button class="btn btn-input-number" type"button">+</button>
+                    <button class="btn btn-input btn-input-more" type"button">+</button>
                   </div>
                 </div>
                 <div class="wrapper-item">
-                  <label class="label-child" for="child">Дети:</label>
+                  <label class="label label-child" for="child">Дети:</label>
                   <div class="input-wrapper-number">
-                    <button class="btn btn-input-number" type"button">-</button>
+                    <button class="btn btn-input btn-input-less" type"button">-</button>
                     <input class="input-number" type="text" name="login" id="child" placeholder="0">
-                    <button class="btn btn-input-number" type"button">+</button>
+                    <button class="btn btn-input btn-input-more" type"button">+</button>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
         </div>
         <div class="map"></div>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer index-main-footer">
         <div class="footer-item footer-text">#VisitSedona</div>
         <div class="footer-item footer-social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a>
