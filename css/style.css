@@ -74,6 +74,13 @@ body {
   text-decoration: none;
 }
 
+.menu-link-left {
+  margin-left: -19%;
+}
+
+.menu-link-right {
+  margin-right: -19%;
+}
 
 .background {
   height: 508px;
@@ -194,9 +201,10 @@ body {
 .wrapper-form {
   position: absolute;
   top: 100%;
-  left: 26.4%;
+  left: 50%;
   width: 568px;
   padding: 55px;
+  margin-left: -284px;
   box-sizing: border-box;
   background: #ffffff;
 }
@@ -287,6 +295,7 @@ body {
 }
 
 .wrap-input {
+  display: flex;
   width: 160px;
 }
 
