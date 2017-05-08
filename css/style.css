@@ -123,12 +123,9 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
-}
-
-.container-relative{
-  position: relative;
 }
 
 .btn {
@@ -195,6 +192,14 @@ body {
   opacity: 0.3;
 }
 
+.menu-active {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #766357;
+  text-decoration: none;
+}
+
 .menu-link-left {
   margin-left: -19%;
 }
@@ -253,6 +258,10 @@ body {
  text-align: center;
  color: #ffffff;
  background-color: #81b3d2;
+}
+
+.card-blue {
+  width: 33%;
 }
 
 .card-title {
@@ -368,7 +377,7 @@ body {
 
 .box-image-2 {
   order: -1;
-  width: 67.333%;
+  width: 67%;
   height: 256px;
   background: url(../img/bridge.jpg) no-repeat center;
 }
@@ -798,15 +807,17 @@ input[type="checkbox"]:checked + label::after {
 .toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+}
+
+.toggle:hover {
+  background: #1c4f80;
 }
 
 .toggle-min {
@@ -821,16 +832,19 @@ input[type="checkbox"]:checked + label::after {
   display: block;
   margin: 0 85px;
   padding: 6px 34px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .sorting {
@@ -923,7 +937,7 @@ input[type="checkbox"]:checked + label::after {
 
 .wrap-module {
   width: 258px;
-  margin-right: 522px;
+  margin-right: auto;
 }
 
 .wrap-module-title {
@@ -966,9 +980,27 @@ input[type="checkbox"]:checked + label::after {
   font-weight: bold;
 }
 
+.module-btn:hover {
+  background-color: #669ec0;
+}
+
+.module-btn:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
 .module-btn-brown {
   width: 142px;
   background-color: #766357;
+}
+
+.module-btn-brown:hover {
+  background-color: #604e43;
+}
+
+.module-btn-brown:active {
+  color: #857871;
+  background-color: #503e33;
 }
 
 .content-img {
@@ -1108,7 +1140,7 @@ input[type="checkbox"]:checked + label::after {
   display: block;
   width: 113px;
   height: 39px;
-  padding-left: 14px;
+  margin-left: 14px;
   margin-right: -6px;
   font-size: 0;
   background: url("../img/spritesheet.png") no-repeat;
