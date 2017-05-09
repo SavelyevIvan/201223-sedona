@@ -5,6 +5,7 @@ body {
   color: #333333;
   font-weight: normal;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 .card-title {
@@ -149,6 +150,8 @@ body {
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 10px #dbdbdb;
 }
 
 .btn {
@@ -357,6 +360,7 @@ body {
 .feature-souvenir:before {
   width: 64px;
   height: 76px;
+  margin-top: -5px;
   background-position: -5px -649px;
 }
 
@@ -407,6 +411,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   background: #766357;
+  z-index: 500;
 }
 
 .map {
@@ -424,6 +429,8 @@ body {
   margin-left: -284px;
   box-sizing: border-box;
   background: #ffffff;
+  box-shadow: 0 4px 12px 1px #6d6d6d;
+  z-index: 200;
 }
 
 .wrapper-form-hide {
@@ -438,8 +445,22 @@ body {
   0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
   20%, 40%, 60%, 80% { transform: translateX(10px); }
-
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay-show {
+  display: none;
+}
+
 
 .wrapper {
   display: flex;
