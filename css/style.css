@@ -330,7 +330,7 @@ body {
 .features {
   display: flex;
   padding-top: 60px;
-  padding-bottom: 77px;
+  padding-bottom: 81px;
 }
 
 .feature {
@@ -504,6 +504,7 @@ body {
 
 .input {
   width: 100%;
+  min-height: 38px;
   padding: 6px 12px;
   padding-right: 36px;
   box-sizing: border-box;
