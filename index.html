@@ -18,7 +18,7 @@
             <li class="menu-item menu-item-left">
               <a href="#" class="menu-link">Информация</a>
             </li>
-            <li class="menu-item menu-item-left">
+            <li class="menu-item menu-item-left menu-item-margin">
               <a href="#" class="menu-link menu-link-left">Фото и видео</a>
             </li>
             <li class="menu-item menu-item-right">
@@ -39,7 +39,7 @@
         <div class="box">
           <div class="card card-blue">
             <h2 class="card-title">Настоящий городок</h2>
-            <div class="card-number">№1</div>
+            <div class="card-number">&#8212; №1 &#8212;</div>
             <p class="card-paragraph">Седона &#8212; не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="box-image"></div>
@@ -61,7 +61,7 @@
         <div class="box">
           <div class="card card-blue">
             <h2 class="card-title">Там есть мост Дьявола</h2>
-            <div class="card-number">№2</div>
+            <div class="card-number">&#8212; №2 &#8212;</div>
             <p class="card-paragraph">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
           </div>
           <div class="box-imag box-image-2"></div>
@@ -69,17 +69,17 @@
         <div class="box">
           <div class="card grey-card">
             <h2 class="card-title">Небольшая площадь</h2>
-            <div class="card-number">№3</div>
+            <div class="card-number">&#8212; №3 &#8212;</div>
             <p class="card-paragraph">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="card grey-card">
             <h2 class="card-title">Красивая дорога</h2>
-            <div class="card-number">№4</div>
+            <div class="card-number">&#8212; №4 &#8212;</div>
             <p class="card-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="card grey-card">
             <h2 class="card-title">Мало туристов</h2>
-            <div class="card-number">№5</div>
+            <div class="card-number">&#8212; №5 &#8212;</div>
             <p class="card-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
@@ -92,14 +92,14 @@
               <div class="wrapper">
                 <label class="label" for="visit">Дата заезда:</label>
                 <div class="input-wrapper">
-                  <input class="input" type="text" name="login" id="visit" placeholder="24 апреля 2017">
+                  <input class="input" type="text" name="visit" id="visit-field" placeholder="24 апреля 2017">
                   <span class="wrapper-calendar"></span>
                 </div>
               </div>
               <div class="wrapper">
                 <label class="label" for="departure">Дата выезда:</label>
                 <div class="input-wrapper">
-                  <input class="input" type="text" name="login" id="departure" placeholder="4 июля 2017">
+                  <input class="input" type="text" name="departure" id="departure-field" placeholder="4 июля 2017">
                   <span class="wrapper-calendar"></span>
                 </div>
               </div>
@@ -107,16 +107,16 @@
                 <div class="wrapper-item">
                   <label class="label label-people" for="people">Взрослые:</label>
                   <div class="input-wrapper-number">
-                    <button class="btn btn-input btn-input-less" type"button">-</button>
-                    <input class="input-number" type="text" name="login" id="people" placeholder="2">
+                    <button class="btn btn-input btn-input-less" type"button">&#8211;</button>
+                    <input class="input-number" type="text" name="people" id="people-field" placeholder="2">
                     <button class="btn btn-input btn-input-more" type"button">+</button>
                   </div>
                 </div>
                 <div class="wrapper-item">
                   <label class="label label-child" for="child">Дети:</label>
                   <div class="input-wrapper-number">
-                    <button class="btn btn-input btn-input-less" type"button">-</button>
-                    <input class="input-number" type="text" name="login" id="child" placeholder="0">
+                    <button class="btn btn-input btn-input-less" type"button">&#8211;</button>
+                    <input class="input-number" type="text" name="child" id="child-field" placeholder="0">
                     <button class="btn btn-input btn-input-more" type"button">+</button>
                   </div>
                 </div>
@@ -125,7 +125,9 @@
             </form>
           </div>
         </div>
-        <div class="map"></div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838599.7616187428!2d-111.78990332524633!3d34.811468345127636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494264194851" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </main>
       <footer class="main-footer index-main-footer">
         <div class="footer-item footer-text">#VisitSedona</div>
@@ -141,9 +143,54 @@
       </footer>
     </div>
     <script>
-      var link = document.querySelector(".btn-contact");
-      var popup = document.querySelector(".form-message");
-      var close = document.querySelector(".btn-close");
+      var link = document.querySelector(".search-btn");
+      var popup = document.querySelector(".wrapper-form");
+      var visit  = popup.querySelector("[name=visit]");
+      var departure  = popup.querySelector("[name=departure]");
+      var people  = popup.querySelector("[name=people]");
+      var child  = popup.querySelector("[name=child]");
+      var form = popup.querySelector("[name=search]")
+      var storageVisit = localStorage.getItem("visit");
+      var storageDeparture = localStorage.getItem("departure");
+      var storagePeople = localStorage.getItem("people");
+      var storageChild = localStorage.getItem("child");
+
+      popup.classList.add("wrapper-form-hide");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("wrapper-form-hide");
+        if (storageVisit) {
+          visit.value = storageVisit;
+          departure.focus();
+        } else {
+          visit.focus();
+        }
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!visit.value || !departure.value || !people.value|| !child.value) {
+          event.preventDefault();
+          popup.classList.remove("form-message-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("form-message-error");
+        } else {
+         localStorage.setItem("visit", visit.value);
+         localStorage.setItem("departure", departure.value);
+         localStorage.setItem("people", people.value);
+         localStorage.setItem("child", child.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("wrapper-form-hide")) {}
+          else  {
+            popup.classList.add("wrapper-form-hide");
+            popup.classList.remove("wrapper-form-error");
+          }
+        }
+     });
     </script>
   </body>
 </html>
