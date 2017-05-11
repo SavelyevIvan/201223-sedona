@@ -1,9 +1,9 @@
   var link = document.querySelector(".search-btn");
   var popup = document.querySelector(".wrapper-form");
-  var visit  = popup.querySelector("[name=visit]");
-  var departure  = popup.querySelector("[name=departure]");
-  var people  = popup.querySelector("[name=people]");
-  var child  = popup.querySelector("[name=child]");
+  var visit = popup.querySelector("[name=visit]");
+  var departure = popup.querySelector("[name=departure]");
+  var people = popup.querySelector("[name=people]");
+  var child = popup.querySelector("[name=child]");
   var form = popup.querySelector("[name=search]")
   var storageVisit = localStorage.getItem("visit");
   var storageDeparture = localStorage.getItem("departure");
@@ -11,7 +11,6 @@
   var storageChild = localStorage.getItem("child");
 
   popup.classList.add("wrapper-form-hide");
-
   link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.toggle("wrapper-form-hide");

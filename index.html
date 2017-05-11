@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -33,7 +33,7 @@
       <main class="main-content">
         <div class="background"></div>
         <div class="wrap">
-          <p class="wrap-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
+          <h2 class="wrap-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="wrap-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="box">
@@ -90,14 +90,14 @@
           <div class="wrapper-form">
             <form action="#" method="post" name="search">
               <div class="wrapper">
-                <label class="label" for="visit">Дата заезда:</label>
+                <label class="label" for="visit-field">Дата заезда:</label>
                 <div class="input-wrapper">
                   <input class="input" type="text" name="visit" id="visit-field" placeholder="24 апреля 2017">
                   <span class="wrapper-calendar"></span>
                 </div>
               </div>
               <div class="wrapper">
-                <label class="label" for="departure">Дата выезда:</label>
+                <label class="label" for="departure-field">Дата выезда:</label>
                 <div class="input-wrapper">
                   <input class="input" type="text" name="departure" id="departure-field" placeholder="4 июля 2017">
                   <span class="wrapper-calendar"></span>
@@ -105,7 +105,7 @@
               </div>
               <div class="wrapper">
                 <div class="wrapper-item">
-                  <label class="label label-people" for="people">Взрослые:</label>
+                  <label class="label label-people" for="people-field">Взрослые:</label>
                   <div class="input-wrapper-number">
                     <button class="btn btn-input btn-input-less" type="button">&#8211;</button>
                     <input class="input-number" type="text" name="people" id="people-field" placeholder="2">
@@ -113,7 +113,7 @@
                   </div>
                 </div>
                 <div class="wrapper-item">
-                  <label class="label label-child" for="child">Дети:</label>
+                  <label class="label label-child" for="child-field">Дети:</label>
                   <div class="input-wrapper-number">
                     <button class="btn btn-input btn-input-less" type="button">&#8211;</button>
                     <input class="input-number" type="text" name="child" id="child-field" placeholder="0">
