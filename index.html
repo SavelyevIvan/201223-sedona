@@ -146,7 +146,6 @@
     <script>
       var link = document.querySelector(".search-btn");
       var popup = document.querySelector(".wrapper-form");
-      var overlay= document.querySelector(".modal-overlay");
       var visit  = popup.querySelector("[name=visit]");
       var departure  = popup.querySelector("[name=departure]");
       var people  = popup.querySelector("[name=people]");
@@ -162,7 +161,6 @@
       link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.toggle("wrapper-form-hide");
-        overlay.classList.toggle("modal-overlay-show");
         if (storageVisit) {
           visit.value = storageVisit;
           departure.focus();

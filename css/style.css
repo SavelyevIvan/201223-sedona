@@ -447,21 +447,6 @@ body {
   20%, 40%, 60%, 80% { transform: translateX(10px); }
 }
 
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-overlay-show {
-  display: none;
-}
-
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -720,9 +705,18 @@ input[type="checkbox"]:disabled + label::before {
   background-position: -5px -317px;
 }
 
+input[type="checkbox"]:disabled + label {
+  color: #6a6a6a;
+}
+
 input[type="checkbox"]:disabled + label::after {
   background-position: -5px -253px;
 }
+
+input[type="checkbox"]:disabled + label {
+  color: #6a6a6a;
+}
+
 
 .range-filter {
   width: 318px;
@@ -755,7 +749,9 @@ input[type="checkbox"]:disabled + label::after {
 .wrap-input {
   display: flex;
   align-items: center;
+  width: 158px;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .price-label {
@@ -774,7 +770,12 @@ input[type="checkbox"]:disabled + label::after {
 .price-input {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
   border: none;
   background: none;
 }
