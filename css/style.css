@@ -15,138 +15,6 @@ body {
   font-weight: bold;
 }
 
-.sprite {
-  background-image: url("spritesheet.png");
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.sprite-1 {
-  width: 11px;
-  height: 10px;
-  background-position: -5px -5px;
-}
-
-.sprite-2 {
-  width: 11px;
-  height: 10px;
-  background-position: -5px -25px;
-}
-
-.sprite-burger {
-  width: 74px;
-  height: 70px;
-  background-position: -5px -45px;
-}
-
-.sprite-calendar {
-  width: 21px;
-  height: 22px;
-  background-position: -5px -125px;
-}
-
-.sprite-calendar2 {
-  width: 21px;
-  height: 22px;
-  background-position: -5px -157px;
-}
-
-.sprite-calendar3 {
-  width: 21px;
-  height: 22px;
-  background-position: -5px -189px;
-}
-
-.sprite-checkbox {
-  width: 26px;
-  height: 22px;
-  background-position: -5px -221px;
-}
-
-.sprite-checkbox-2 {
-  width: 26px;
-  height: 22px;
-  background-position: -5px -253px;
-}
-
-.sprite-checkbox-border {
-  width: 22px;
-  height: 22px;
-  background-position: -5px -285px;
-}
-
-.sprite-checkbox-border2 {
-  width: 22px;
-  height: 22px;
-  background-position: -5px -317px;
-}
-
-.sprite-facebook {
-  width: 10px;
-  height: 19px;
-  background-position: -5px -349px;
-}
-
-.sprite-house {
-  width: 75px;
-  height: 72px;
-  background-position: -5px -378px;
-}
-
-.sprite-htmlacademy-logo {
-  width: 113px;
-  height: 39px;
-  background-position: -5px -460px;
-}
-
-.sprite-htmlacademy-logo-2 {
-  width: 113px;
-  height: 39px;
-  background-position: -5px -509px;
-}
-
-.sprite-htmlacademy-logo-3 {
-  width: 113px;
-  height: 39px;
-  background-position: -5px -558px;
-}
-
-.sprite-plus {
-  width: 11px;
-  height: 11px;
-  background-position: -5px -607px;
-}
-
-.sprite-plus1png {
-  width: 11px;
-  height: 11px;
-  background-position: -5px -628px;
-}
-
-.sprite-souvenir {
-  width: 64px;
-  height: 76px;
-  background-position: -5px -649px;
-}
-
-.sprite-stars {
-  width: 89px;
-  height: 17px;
-  background-position: -5px -735px;
-}
-
-.sprite-twitter {
-  width: 17px;
-  height: 15px;
-  background-position: -5px -762px;
-}
-
-.sprite-youtube {
-  width: 20px;
-  height: 16px;
-  background-position: -5px -787px;
-}
-
 .container {
   position: relative;
   width: 1200px;
@@ -243,7 +111,7 @@ body {
   position: relative;
   width: 100%;
   height: 508px;
-  background: #687c8b url("../img/background.jpg") 0 -55px;
+  background: #677c8b url("../img/background.jpg") 0 -55px;
 }
 
 .background::before {
@@ -327,7 +195,7 @@ body {
 .box-image {
   width: 800px;
   height: 256px;
-  background: url(../img/city.jpg) no-repeat;
+  background: #9e795c url("../img/city.jpg") no-repeat;
 }
 
 .features {
@@ -353,20 +221,20 @@ body {
 .feature-house::before {
   width: 75px;
   height: 72px;
-  background-position: -5px -378px;
+  background-position: -5px -306px;
 }
 
 .feature-burger:before {
   width: 74px;
   height: 70px;
-  background-position: -5px -45px;
+  background-position: -5px -5px;
 }
 
 .feature-souvenir:before {
   width: 64px;
   height: 76px;
   margin-top: -5px;
-  background-position: -5px -649px;
+  background-position: -5px -526px;
 }
 
 .feature-title {
@@ -386,7 +254,7 @@ body {
           order: -1;
   width: 800px;
   height: 256px;
-  background: url(../img/bridge.jpg) no-repeat center;
+  background: #81523a url("../img/bridge.jpg") no-repeat center;
 }
 
 .search {
@@ -423,7 +291,7 @@ body {
 .map {
   width: 100%;
   height: 593px;
-  background: #e1ecbc url(../img/map.jpg) no-repeat center;
+  background: #e1ecbc url("../img/map.jpg") no-repeat center;
 }
 
 .iframe {
@@ -570,7 +438,7 @@ body {
   width: 21px;
   height: 22px;
   background: url("../img/spritesheet.png") no-repeat center;
-  background-position: -5px -157px;
+  background-position: -5px -85px;
   opacity: 0.2;
   cursor: pointer;
 }
@@ -580,7 +448,7 @@ body {
 }
 
 .wrapper-calendar:active {
-   background-position: -5px -189px;
+   background-position: -5px -117px;
 }
 
 .input-number {
@@ -697,7 +565,7 @@ body {
   padding-bottom: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../img/filter-background.jpg) no-repeat 0 17%;
+  background: #425464 url("../img/filter-background.jpg") no-repeat 0 17%;
 }
 
 .form {
@@ -754,7 +622,7 @@ body {
   width: 22px;
   height: 22px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -285px;
+  background-position: -5px -213px;
 }
 
 .input-checkbox:checked + .label-text::before{
@@ -769,11 +637,11 @@ body {
   width: 26px;
   height: 27px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -221px;
+  background-position: -5px -149px;
 }
 
 .input-checkbox:disabled + .label-text::before {
-  background-position: -5px -317px;
+  background-position: -5px -245px;
 }
 
 .input-checkbox:disabled + .label-text {
@@ -781,7 +649,7 @@ body {
 }
 
 .input-checkbox:disabled + .label-text::after {
-  background-position: -5px -253px;
+  background-position: -5px -181px;
 }
 
 .input-checkbox:disabled + .label-text {
@@ -1029,7 +897,7 @@ body {
   height: 10px;
   margin-right: 12px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -5px;
+  background-position: -5px -486px;
   opacity: 0.2;
 }
 
@@ -1038,7 +906,7 @@ body {
 }
 
 .switch:active {
-  background-position: -5px -25px;
+  background-position: -5px -506px;
 }
 
 .switch-up {
@@ -1051,7 +919,7 @@ body {
 }
 
 .switch-active {
-  background-position: -5px -25px;
+  background-position: -5px -506px;
   opacity: 1;
 }
 
@@ -1262,7 +1130,7 @@ body {
   content: "";
   width: 17px;
   height: 15px;
-  background-position: -5px -762px;
+  background-position: -5px -639px;
 }
 
 .social-btn-fb::before {
@@ -1270,7 +1138,7 @@ body {
   content: "";
   width: 10px;
   height: 19px;
-  background-position: -5px -349px;
+  background-position: -5px -277px;
 }
 
 .social-btn-youtb::before {
@@ -1278,7 +1146,7 @@ body {
   content: "";
   width: 20px;
   height: 16px;
-  background-position: -5px -787px;
+  background-position: -5px -664px;
 }
 
 .social-btn:hover {
@@ -1306,14 +1174,14 @@ body {
   margin-left: 9px;
   font-size: 0;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -460px;
+  background-position: -5px -388px;
 }
 
 .footer-link:hover {
-  background-position: -5px -509px;
+  background-position: -5px -437px;
 }
 
 .footer-link:active {
-  background-position: -5px -558px;
+  background-position: -5px -388px;;
   opacity: 0.3;
 }

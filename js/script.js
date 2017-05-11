@@ -38,7 +38,7 @@
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-      if (popup.classList.contains("wrapper-form-hide")) {}
+      if (popup.classList.contains("wrapper-form-hide")) 
       else  {
         popup.classList.add("wrapper-form-hide");
         popup.classList.remove("wrapper-form-error");
