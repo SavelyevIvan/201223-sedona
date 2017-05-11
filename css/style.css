@@ -426,6 +426,10 @@ body {
   background: #e1ecbc url(../img/map.jpg) no-repeat center;
 }
 
+.iframe {
+  border: 0;
+}
+
 .wrapper-form {
   position: absolute;
   top: 100%;
@@ -601,9 +605,36 @@ body {
   outline: none;
 }
 
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-moz-placeholder,
+::-webkit-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
 :-ms-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -827,7 +858,15 @@ body {
   background: none;
 }
 
-.price-input::-webkit-input-placeholder,
+.price-input::-webkit-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .price-input:-ms-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -837,7 +876,15 @@ body {
   text-transform: uppercase;
 }
 
-.price-input::-moz-placeholder,
+.price-input::-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .price-input:-moz-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
