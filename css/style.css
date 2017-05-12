@@ -1007,6 +1007,7 @@ body {
 }
 
 .star {
+  display: block;
   width: 20px;
   height: 17px;
   margin-right: 3px;
