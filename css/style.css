@@ -65,12 +65,16 @@ body {
 }
 
 .menu-item-margin {
-  flex-grow: 2;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   margin-left: 29px
 }
 
 .menu-item-map {
-  flex-grow: 2;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   margin-right: 34px;
 }
 
@@ -381,6 +385,11 @@ body {
   text-transform: uppercase;
 }
 
+.label {
+  cursor: pointer;
+}
+
+
 .wrapper-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,42 +483,22 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   color: #000000;
-  text-transform: uppercase;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   color: #000000;
-  text-transform: uppercase;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   color: #000000;
-  text-transform: uppercase;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   color: #000000;
-  text-transform: uppercase;
   opacity: 1;
 }
 
@@ -727,39 +716,23 @@ body {
 }
 
 .price-input::-webkit-input-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
   color: #ffffff;
-  text-transform: uppercase;
+  opacity: 1;
 }
 
 .price-input:-ms-input-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
   color: #ffffff;
-  text-transform: uppercase;
+  opacity: 1;
 }
 
 .price-input::-moz-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: normal;
   color: #ffffff;
-  text-transform: uppercase;
+  opacity: 1;
 }
 
 .price-input:-moz-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: normal;
   color: #ffffff;
-  text-transform: uppercase;
+  opacity: 1;
 }
 
 .range-controls {
@@ -1038,7 +1011,7 @@ body {
   height: 17px;
   margin-right: 3px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -735px;
+  background-position: -5px -612px;
 }
 
 .star:last-child {
